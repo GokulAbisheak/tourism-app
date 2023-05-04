@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "775203902350",
+    "project_id": "toursim-app-1f4df",
+    "storage_bucket": "toursim-app-1f4df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:775203902350:android:ce5c55d92186c8f2834adf",
+        "android_client_info": {
+          "package_name": "com.example.tourism_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "775203902350-86p81h1aufqdjqd3ua77lqe2vv094cmr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQ_EaTHbvu6MaRQGTPUK_cbgCs7x8J1mQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "775203902350-86p81h1aufqdjqd3ua77lqe2vv094cmr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

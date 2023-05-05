@@ -1,4 +1,3 @@
-package com.example.tourism_app
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

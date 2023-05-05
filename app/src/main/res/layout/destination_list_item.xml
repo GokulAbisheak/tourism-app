@@ -22,7 +22,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/tvEmpName"
+                android:id="@+id/tvDestinationName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Destination Name"

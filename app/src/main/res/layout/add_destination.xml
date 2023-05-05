@@ -52,12 +52,17 @@
         android:id="@+id/destination_image_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Choose Image"/>
+        android:text="Choose Image"
+        android:background="@drawable/login_button_bk"
+        android:layout_marginBottom="12dp"/>
 
     <Button
         android:id="@+id/add_destination_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add Destination"/>
+        android:text="Add Destination"
+        android:background="@drawable/login_button_bk"/>
 
 </LinearLayout>
+
+

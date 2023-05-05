@@ -14,6 +14,7 @@
         android:theme="@style/Theme.Tourismapp"
         tools:targetApi="31">
         <activity
+            android:name=".activities.MainActivity"
             android:name=".add_vehicle"
             android:exported="false" />
         <activity

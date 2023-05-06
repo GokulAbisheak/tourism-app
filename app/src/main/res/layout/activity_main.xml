@@ -16,6 +16,12 @@
         android:id="@+id/redirect_add_destination_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Destintion" />
+        android:text="Add Destination" />
+
+    <Button
+        android:id="@+id/redirect_fetch_destination_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Destination" />
 
 </LinearLayout>

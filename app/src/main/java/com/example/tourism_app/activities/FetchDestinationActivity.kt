@@ -1,5 +1,6 @@
 package com.example.tourism_app.activities
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.TextView
@@ -49,6 +50,19 @@ class FetchDestinationActivity : AppCompatActivity() {
                     }
                     val mAdapter = DestinationAdapter(destinationList)
                     destinationRecyclerView.adapter = mAdapter
+
+                    mAdapter.setOnItemClickListener(object: DestinationAdapter.onItemClickListener{
+                        override fun onItemClick(position: Int) {
+                            val intent = Intent(this@FetchDestinationActivity, DestinationDetailsActivity::class.java)
+
+                            intent.putExtra("destinationId", destinationList[position].destinationId)
+                            intent.putExtra("destinationName", destinationList[position].destinationName)
+                            intent.putExtra("destinationLocation", destinationList[position].destinationLocation)
+                            intent.putExtra("destinationDescription", destinationList[position].destinationDescription)
+                            startActivity(intent)
+                        }
+
+                    })
 
                     destinationRecyclerView.visibility = View.VISIBLE
                     tvLoadingData.visibility = View.GONE

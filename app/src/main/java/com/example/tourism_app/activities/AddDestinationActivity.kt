@@ -55,11 +55,11 @@ class AddDestinationActivity : AppCompatActivity() {
             destinationDescription.error = "Please Enter Destination Description"
         }
 
-        val empId = dbRef.push().key!!
+        val destinationId = dbRef.push().key!!
 
-        val destination = DestinationModel(name, location, description)
+        val destination = DestinationModel(destinationId, name, location, description)
 
-        dbRef.child(empId).setValue(destination)
+        dbRef.child(destinationId).setValue(destination)
             .addOnCompleteListener{
                 Toast.makeText(this, "Destination Added Successfully", Toast.LENGTH_LONG).show()
             }.addOnFailureListener { err ->

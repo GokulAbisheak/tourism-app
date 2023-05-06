@@ -10,9 +10,18 @@ import com.example.tourism_app.R
 import com.example.tourism_app.models.DestinationModel
 
 class DestinationAdapter (private val destinationList: ArrayList<DestinationModel>) : RecyclerView.Adapter<DestinationAdapter.ViewHolder>() {
+
+    private lateinit var mListener: onItemClickListener
+    interface onItemClickListener {
+        fun onItemClick(position: Int)
+    }
+
+    fun setOnItemClickListener(clickListener: onItemClickListener){
+        mListener = clickListener
+    }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.destination_list_item, parent, false)
-        return ViewHolder(itemView)
+        return ViewHolder(itemView, mListener)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
@@ -24,8 +33,14 @@ class DestinationAdapter (private val destinationList: ArrayList<DestinationMode
         return destinationList.size
     }
 
-    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class ViewHolder(itemView: View, clickListener: onItemClickListener) : RecyclerView.ViewHolder(itemView) {
 
         val tvDestinationName : TextView = itemView.findViewById(R.id.tvDestinationName)
+
+        init {
+            itemView.setOnClickListener {
+                clickListener.onItemClick(adapterPosition)
+            }
+        }
     }
 }

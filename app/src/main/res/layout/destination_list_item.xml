@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="150dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardElevation="8dp"
     app:cardCornerRadius="8dp"
-    android:layout_margin="8dp">
+    app:cardBackgroundColor="@color/design_default_color_primary"
+    android:layout_margin="8dp"
+    >
+
+    <ImageView
+        android:id="@+id/destination_icon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:foreground="@drawable/black_tint"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -28,9 +37,12 @@
                 android:text="Destination Name"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="30sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:shadowColor="@color/black"
+                android:textAllCaps="true"/>
+
 
 
         </LinearLayout>

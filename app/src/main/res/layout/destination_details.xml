@@ -15,6 +15,16 @@
         android:textColor="@color/black"
         android:textAllCaps="true"/>
 
+    <ImageView
+        android:id="@+id/display_destination_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:maxHeight="0dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Image Preview" />
+
     <TextView
         android:id="@+id/tv_destination_location"
         android:layout_width="match_parent"

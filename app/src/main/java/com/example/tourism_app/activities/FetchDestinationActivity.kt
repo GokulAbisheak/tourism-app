@@ -59,6 +59,7 @@ class FetchDestinationActivity : AppCompatActivity() {
                             intent.putExtra("destinationName", destinationList[position].destinationName)
                             intent.putExtra("destinationLocation", destinationList[position].destinationLocation)
                             intent.putExtra("destinationDescription", destinationList[position].destinationDescription)
+                            intent.putExtra("destinationImg", destinationList[position].destinationImg)
                             startActivity(intent)
                         }
 

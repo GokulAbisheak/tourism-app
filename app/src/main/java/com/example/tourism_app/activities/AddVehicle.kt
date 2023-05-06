@@ -7,7 +7,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import com.example.tourism_app.R
-import com.example.tourism_app.VehicleModel
+import com.example.tourism_app.models.VehicleModel
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
@@ -35,6 +35,7 @@ class AddVehicle : AppCompatActivity() {
 
         btnSaveData.setOnClickListener{
             dbRef.child("Vehicles").setValue(null)
+            Log.d(TAG, "saveVehiData called")
             saveVehiData()
         }
 
@@ -66,7 +67,7 @@ class AddVehicle : AppCompatActivity() {
 
         val vehicle = VehicleModel(vehId,vehType,vehDesc,vehFare,vehAvail)
 
-        dbRef.child(vehId).setValue(vehicle).addOnCompleteListener{
+        dbRef.child(vehId).setValue(vehicle).addOnCompleteListener{ task ->
             Toast.makeText(this, "Data Inserted Successfully", Toast.LENGTH_LONG).show()
             etAddVehicleTy.text.clear()
             etAddVehicleFare.text.clear()

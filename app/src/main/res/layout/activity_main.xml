@@ -26,5 +26,14 @@
         android:shadowRadius="30"
         android:text="Add Vehicle" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/fetch_vehicle_button"
+        android:textSize="18sp"
+        android:layout_marginTop="40dp"
+        android:shadowRadius="30"
+        android:text="Fetch Vehicle" />
+
 
 </LinearLayout>

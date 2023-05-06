@@ -1,4 +1,4 @@
-package com.example.tourism_app
+package com.example.tourism_app.models
 
 data class VehicleModel (
     var vehId :String?=null,

@@ -12,12 +12,16 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var redirectAddDestinationBtn: Button
     private lateinit var redirectAddVehicleBtn: Button
+    private lateinit var fetchVehicleDataBtn: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         redirectAddDestinationBtn = findViewById(R.id.redirect_add_destination_button)
         redirectAddVehicleBtn = findViewById(R.id.redirect_add_vehicle_button)
+        fetchVehicleDataBtn = findViewById(R.id.fetch_vehicle_button)
+
 
         var dbRef: DatabaseReference = FirebaseDatabase.getInstance().getReference()
         var firebase: DatabaseReference = FirebaseDatabase.getInstance().getReference()
@@ -30,6 +34,11 @@ class MainActivity : AppCompatActivity() {
         redirectAddVehicleBtn.setOnClickListener {
             val intent2 = Intent(this, AddVehicle::class.java)
             startActivity(intent2)
+        }
+
+        fetchVehicleDataBtn.setOnClickListener{
+            val intent = Intent(this, FetchVehicleActivity::class.java)
+            startActivity(intent)
         }
     }
 }

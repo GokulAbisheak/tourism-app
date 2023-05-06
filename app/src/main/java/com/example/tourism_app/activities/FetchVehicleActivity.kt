@@ -1,5 +1,6 @@
 package com.example.tourism_app.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -50,6 +51,21 @@ class FetchVehicleActivity : AppCompatActivity() {
                     }
                     val mAdapter = VehicleAdapter(vehList)
                     vehRecyclerVeiw.adapter = mAdapter
+
+                    mAdapter.setonItemClickListener(object : VehicleAdapter.OnItemClickListener{
+                        override fun onClickItem(position: Int) {
+                            val intent = Intent(this@FetchVehicleActivity,VehicleDetailsActivity::class.java)
+
+                            intent.putExtra("vehId",vehList[position].vehId)
+                            intent.putExtra("vehTy",vehList[position].vehTy)
+                            intent.putExtra("vehAvail",vehList[position].vehAvail)
+                            intent.putExtra("vehDesc",vehList[position].vehDesc)
+                            intent.putExtra("vehFare",vehList[position].vehFare)
+
+                            startActivity(intent)
+                        }
+
+                    })
 
                     vehRecyclerVeiw.visibility = View.VISIBLE
                     tvLoadingData.visibility = View.GONE

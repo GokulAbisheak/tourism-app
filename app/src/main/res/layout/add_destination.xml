@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -42,12 +44,6 @@
         android:layout_height="wrap_content"
         android:inputType="text"/>
 
-    <TextView
-        android:id="@+id/destination_image_label"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Destination Image"/>
-
     <Button
         android:id="@+id/destination_image_button"
         android:layout_width="match_parent"
@@ -62,6 +58,17 @@
         android:layout_height="wrap_content"
         android:text="Add Destination"
         android:background="@drawable/login_button_bk"/>
+
+    <ImageView
+        android:id="@+id/destination_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:maxHeight="0dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Image Preview"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
 </LinearLayout>
 

@@ -1,5 +1,6 @@
 package com.example.tourism_app.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -42,6 +43,19 @@ class VehicleDetailsActivity : AppCompatActivity() {
             deleteRecord(
                 intent.getStringExtra("vehId").toString()
             )
+        }
+    }
+    private fun deleteRecord( vehId:String){
+       val dbRef = FirebaseDatabase.getInstance().getReference("Vehicles").child(vehId)
+        val mTask = dbRef.removeValue()
+
+        mTask.addOnSuccessListener {
+            Toast.makeText(this,"Vehicle Data Deleted",Toast.LENGTH_LONG).show()
+            val intent = Intent(this,FetchVehicleActivity::class.java)
+            finish()
+            startActivity(intent)
+        }.addOnFailureListener{error ->
+            Toast.makeText(this,"Deleting Err ${error.message}",Toast.LENGTH_LONG).show()
         }
     }
 

@@ -37,6 +37,12 @@ class VehicleDetailsActivity : AppCompatActivity() {
                         intent.getStringExtra("vehTy").toString()
             )
         }
+
+        btnDelete.setOnClickListener {
+            deleteRecord(
+                intent.getStringExtra("vehId").toString()
+            )
+        }
     }
 
     private fun initView(){
@@ -99,13 +105,13 @@ class VehicleDetailsActivity : AppCompatActivity() {
     }
 
     private fun updateVehiData(
-        id: String,
-        Type:String,
-        Desc:String,
-        fare:String){
+        vehId: String,
+        vehTy: String,
+        vehDesc:String,
+        vehFare:String){
 
-        val dbRef = FirebaseDatabase.getInstance().getReference("Vehicles").child(id)
-        val vehInfo = VehicleModel(vehId = null, vehTy = null , vehDesc = null, vehAvail = null)
+        val dbRef = FirebaseDatabase.getInstance().getReference("Vehicles").child(vehId)
+        val vehInfo = VehicleModel(vehId, vehTy  , vehDesc , vehFare )
         dbRef.setValue(vehInfo)
 
     }

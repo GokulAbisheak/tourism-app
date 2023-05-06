@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/destination_name_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Destination Name"/>
+
+    <EditText
+        android:id="@+id/destination_name_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/destination_location_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Destination Location"/>
+
+    <EditText
+        android:id="@+id/destination_location_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/destination_description_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Destination Description"/>
+
+    <EditText
+        android:id="@+id/destination_description_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/destination_image_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Destination Image"/>
+
+    <Button
+        android:id="@+id/destination_image_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Image"
+        android:background="@drawable/login_button_bk"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/destination_update_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Destination"
+        android:background="@drawable/login_button_bk"/>
+
+</LinearLayout>
+
+

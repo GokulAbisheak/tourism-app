@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".add_vehicle">
+    tools:context=".activities.AddVehicle">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -20,80 +20,77 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_gravity="center_horizontal"
-            android:padding="20dp"
-            android:background="@drawable/lavender_border">
+            android:background="@drawable/lavender_border"
+            android:orientation="vertical"
+            android:padding="20dp">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Add vehicle details"
+                android:textAlignment="center"
                 android:textColor="@color/lavender"
-                android:textSize="25dp"
-                android:textAlignment="center"/>
+                android:textSize="25dp" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:layout_marginTop="10dp"
-                android:src="@drawable/uploadimg"/>
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:id="@+id/vehicleTypeInp"
-                android:background="@drawable/lavender_border"
-                android:layout_marginTop="20dp"
-                android:hint="Enter vehicle type"
-                android:padding="16dp"
-                android:gravity="start|center_vertical"
-                android:textColor="@color/lavender"/>
+                android:src="@drawable/uploadimg" />
 
             <EditText
+                android:id="@+id/etVehicleTypeInp"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:id="@+id/vehicleDescriptionInp"
-                android:background="@drawable/lavender_border"
                 android:layout_marginTop="20dp"
-                android:hint="Enter vehicle Descrpition"
-                android:padding="16dp"
+                android:background="@drawable/lavender_border"
                 android:gravity="start|center_vertical"
-                android:textColor="@color/lavender"/>
+                android:hint="Enter type"
+                android:padding="16dp"
+                android:textColor="@color/lavender" />
 
             <EditText
+                android:id="@+id/etVehicleDescriptionInp"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:id="@+id/vehicleFaresInp"
-                android:background="@drawable/lavender_border"
                 android:layout_marginTop="20dp"
-                android:hint="Enter Vehicle fare per Km"
-                android:padding="16dp"
+                android:background="@drawable/lavender_border"
                 android:gravity="start|center_vertical"
-                android:textColor="@color/lavender"/>
+                android:hint="Enter Descrpition"
+                android:padding="16dp"
+                android:textColor="@color/lavender" />
 
             <EditText
+                android:id="@+id/etVehicleFaresInp"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:id="@+id/vehicleAvail"
-                android:background="@drawable/lavender_border"
                 android:layout_marginTop="20dp"
+                android:background="@drawable/lavender_border"
+                android:gravity="start|center_vertical"
+                android:hint="Enter Fare"
+                android:padding="16dp"
+                android:textColor="@color/lavender" />
+
+            <EditText
+                android:id="@+id/etVehicleAvailInp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/lavender_border"
+                android:gravity="start|center_vertical"
                 android:hint="Availability"
                 android:padding="16dp"
-                android:gravity="start|center_vertical"
-                android:textColor="@color/lavender"/>
+                android:textColor="@color/lavender" />
 
             <Button
+                android:id="@+id/AddvehiSavebtn"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:id="@+id/add_vehi_button"
-                android:textSize="18sp"
                 android:layout_marginTop="40dp"
                 android:shadowRadius="30"
-                android:text="Save" />
-
-
-
-
+                android:text="Save"
+                android:textSize="18sp" />
 
 
         </LinearLayout>

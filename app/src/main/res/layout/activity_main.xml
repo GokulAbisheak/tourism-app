@@ -7,15 +7,24 @@
     android:orientation="vertical"
     tools:context=".activities.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
 
     <Button
         android:id="@+id/redirect_add_destination_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="18sp"
+        android:layout_marginTop="40dp"
+        android:shadowRadius="30"
         android:text="Add Destintion" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/redirect_add_vehicle_button"
+        android:textSize="18sp"
+        android:layout_marginTop="40dp"
+        android:shadowRadius="30"
+        android:text="Add Vehicle" />
+
 
 </LinearLayout>

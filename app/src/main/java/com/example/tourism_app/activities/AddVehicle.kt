@@ -115,7 +115,7 @@ class AddVehicle : AppCompatActivity() {
 
 
 
-        val vehicle = VehicleModel(vehId,vehType,vehDesc,vehFare,vehAvail)
+        val vehicle = VehicleModel(vehId,vehType,vehDesc,vehFare,vehAvail,filename)
 
         dbRef.child(vehId).setValue(vehicle).addOnCompleteListener{ task ->
             Toast.makeText(this, "Data Inserted Successfully", Toast.LENGTH_LONG).show()

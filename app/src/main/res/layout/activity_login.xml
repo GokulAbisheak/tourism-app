@@ -7,7 +7,7 @@ xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:background="@drawable/loginwall"
-tools:context=".activities.loginActivity">
+tools:context=".activities.LoginActivity">
 
 <LinearLayout
     android:layout_width="match_parent"
@@ -36,7 +36,7 @@ tools:context=".activities.loginActivity">
             android:textColor="@color/grey" />
 
         <EditText
-            android:id="@+id/login_passw"
+            android:id="@+id/login_pass"
             android:layout_width="350dp"
             android:layout_height="60dp"
             android:layout_marginTop="20dp"

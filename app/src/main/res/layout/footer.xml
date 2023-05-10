@@ -8,7 +8,12 @@
     android:layout_alignParentBottom="true"
     android:background="@color/lavender"
     android:orientation="vertical">
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:background="@color/lavender"
+        android:gravity="bottom"
+        android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="71dp"
@@ -17,7 +22,7 @@
         android:orientation="horizontal">
 
         <ImageButton
-            android:id="@+id/imageButton4"
+            android:id="@+id/home_nav"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -26,7 +31,7 @@
             app:srcCompat="@drawable/home_icon" />
 
         <ImageButton
-            android:id="@+id/imageButton5"
+            android:id="@+id/destination_nav"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -35,6 +40,7 @@
             app:srcCompat="@drawable/destination_icon" />
 
         <ImageButton
+            android:id="@+id/vehicle_nav"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -43,7 +49,7 @@
             app:srcCompat="@drawable/vehicle_icon" />
 
         <ImageButton
-            android:id="@+id/imageButton7"
+            android:id="@+id/hotel_nav"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -52,12 +58,13 @@
             app:srcCompat="@drawable/hotel_icon" />
 
         <ImageButton
-            android:id="@+id/imageButton8"
+            android:id="@+id/user_nav"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@color/lavender"
             app:srcCompat="@drawable/user_icon" />
 
+    </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

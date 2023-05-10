@@ -33,6 +33,10 @@
         <activity android:name=".activities.DestinationDetailsActivity" />
         <activity android:name=".activities.LoginActivity" />
         <activity android:name=".activities.SignUpActivity" />
+
+        <activity android:name=".activities.FetchLocation" />
+        <activity android:name=".activities.AddLocationActivity" />
+        <activity android:name=".activities.LocationDetailsActivity" />
     </application>
 
 </manifest>

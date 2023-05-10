@@ -90,7 +90,6 @@
 
 </LinearLayout>
 
-<include layout="@layout/footer"></include>
 </RelativeLayout>
 
 

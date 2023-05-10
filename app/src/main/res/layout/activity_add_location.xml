@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/loginBkColor"
+    tools:context=".activities.AddLocationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginBottom="34dp"
+        android:background="@color/loginBkColor"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btnSave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"></LinearLayout>
+
+        <TextView
+            android:id="@+id/residence"
+            android:layout_width="166dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="32dp"
+            android:text="Residence"
+            android:textAlignment="center"
+            android:textSize="34sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Hotel"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/myName"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="58dp"
+            android:layout_marginEnd="75dp"
+            android:background="@color/loginBkColor"
+            android:ems="10"
+            android:hint="Enter Hotel Name"
+            android:inputType="textPersonName"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Contact Number"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/myPhone"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="58dp"
+            android:layout_marginEnd="75dp"
+            android:background="@color/loginBkColor"
+            android:ems="10"
+            android:hint="Enter Phone number"
+            android:inputType="phone"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Rent per A Night [Rs]"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/myRent"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="58dp"
+            android:layout_marginEnd="75dp"
+            android:background="@color/loginBkColor"
+            android:ems="10"
+            android:hint="Enter the rent for a night"
+            android:inputType="numberSigned"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextText4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Address"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/myAddress"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="58dp"
+            android:layout_marginEnd="75dp"
+            android:background="@color/loginBkColor"
+            android:ems="10"
+            android:hint="Enter Hotel Address"
+            android:inputType="textPersonName"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="153dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/lavender"
+        android:text="Save"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

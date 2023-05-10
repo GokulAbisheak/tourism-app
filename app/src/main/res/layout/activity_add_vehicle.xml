@@ -82,6 +82,25 @@
                 android:hint="Availability"
                 android:padding="16dp"
                 android:textColor="@color/lavender" />
+            <ImageView
+                android:id="@+id/vehicle_image"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="1"
+                android:contentDescription="Image Preview"
+                android:maxHeight="0dp"
+                android:scaleType="centerCrop"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <Button
+                android:id="@+id/vehicle_image_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose Image"
+                android:background="@drawable/login_button_bk"
+                android:layout_marginBottom="12dp"/>
 
             <Button
                 android:id="@+id/AddvehiSavebtn"

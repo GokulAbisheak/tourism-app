@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbg">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Admin Dashboard"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:background="@color/lavender"/>
+
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginTop="140dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp">
+
+        <Button
+            android:id="@+id/destinationManagementButton"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="16dp"
+            android:text="Destination Management"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/vehicleManagementButton"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="16dp"
+            android:text="Vehicle Management"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/accommodationManagementButton"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Accommodation Management"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

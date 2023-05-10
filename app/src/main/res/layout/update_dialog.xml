@@ -6,44 +6,32 @@
     android:padding="10dp">
 
     <EditText
-        android:id="@+id/upmyName"
+        android:id="@+id/etVehicleTypeInp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginTop="20dp"
-        android:ems="10"
-        android:hint="Hotel Name"
-        android:inputType="textPersonName"
-        android:textSize="24sp" />
+        android:hint="Vehicle Type"
+        android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/upmyPhone"
+        android:id="@+id/etVehicleDescriptionInp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginTop="20dp"
         android:ems="10"
-        android:hint="Contact Number"
-        android:textSize="24sp" />
+        android:hint="Vehicle Description" />
 
     <EditText
-        android:id="@+id/upmyRent"
+        android:id="@+id/etVehicleFaresInp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginTop="20dp"
         android:ems="10"
-        android:hint="Rent for Night"
-        android:textSize="24sp" />
-    <EditText
-        android:id="@+id/upmyAddress"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:hint="Address"
-        android:inputType="textPersonName"
-        android:textSize="24sp" />
+        android:hint="Vehicle Fare"
+        android:inputType="textPersonName" />
 
     <Button
-        android:id="@+id/btnUpdateData"
+        android:id="@+id/btnUpdatevehiData"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

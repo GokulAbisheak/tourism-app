@@ -45,7 +45,8 @@ tools:context=".activities.LoginActivity">
             android:drawablePadding="8dp"
             android:hint="Password"
             android:padding="8dp"
-            android:textColor="@color/grey" />
+            android:textColor="@color/grey"
+            android:inputType="textPassword"/>
 
 
         <Button

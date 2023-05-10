@@ -54,7 +54,8 @@
                 android:drawablePadding="8dp"
                 android:hint="Password"
                 android:padding="8dp"
-                android:textColor="@color/grey" />
+                android:textColor="@color/grey"
+                android:inputType="textPassword"/>
 
             <EditText
                 android:id="@+id/signup_confirm_pass"
@@ -66,7 +67,8 @@
                 android:drawablePadding="8dp"
                 android:hint=" Confirm Password"
                 android:padding="8dp"
-                android:textColor="@color/grey" />
+                android:textColor="@color/grey"
+                android:inputType="textPassword"/>
 
             <Button
                 android:id="@+id/signupBtn"

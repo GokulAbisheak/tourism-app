@@ -52,7 +52,7 @@ class LoginActivity : AppCompatActivity() {
                     Toast.makeText(this, "Authentication successful.", Toast.LENGTH_SHORT).show()
 
                     if (emailEditText.text.toString() == "admin@app.com") {
-                        startActivity(Intent(this, MainActivity::class.java))
+                        startActivity(Intent(this, AdminDashboardActivity::class.java))
                     }else {
                         startActivity(Intent(this, MainActivity::class.java))
                     }

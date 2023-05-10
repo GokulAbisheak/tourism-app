@@ -1,4 +1,4 @@
-package com.example.tourism_app
+package com.example.touristregister
 
 import org.junit.Test
 

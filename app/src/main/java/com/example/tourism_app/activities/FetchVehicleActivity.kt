@@ -1,5 +1,6 @@
 package com.example.tourism_app.activities
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -54,7 +55,19 @@ class FetchVehicleActivity : AppCompatActivity() {
 
                     mAdapter.setonItemClickListener(object : VehicleAdapter.OnItemClickListener{
                         override fun onClickItem(position: Int) {
-                            val intent = Intent(this@FetchVehicleActivity,VehicleDetailsActivity::class.java)
+                            // Get an instance of SharedPreferences
+                            val sharedPreferences = getSharedPreferences("my_prefs", Context.MODE_PRIVATE)
+
+                            // Retrieve the email from SharedPreferences
+                            val email = sharedPreferences.getString("email", "")
+
+                            val intent: Intent
+
+                            if(email.toString() == "admin@app.com"){
+                                intent = Intent(this@FetchVehicleActivity, VehicleDetailsActivity::class.java)
+                            } else {
+                                intent = Intent(this@FetchVehicleActivity, VehicleDetailsUserActivity::class.java)
+                            }
 
                             intent.putExtra("vehId",vehList[position].vehId)
                             intent.putExtra("vehTy",vehList[position].vehTy)

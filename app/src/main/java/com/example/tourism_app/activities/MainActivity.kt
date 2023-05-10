@@ -42,10 +42,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-//        vehicleButton.setOnClickListener {
-//            val intent = Intent(this, VehicleActivity::class.java)
-//            startActivity(intent)
-//        }
+        vehicleButton.setOnClickListener {
+            val intent = Intent(this, FetchVehicleActivity::class.java)
+            startActivity(intent)
+        }
 
         hotelButton.setOnClickListener {
             val intent = Intent(this, FetchLocation::class.java)

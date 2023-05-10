@@ -14,11 +14,7 @@
         android:theme="@style/Theme.Tourismapp"
         tools:targetApi="31">
         <activity
-            android:name=".activities.MainActivity"
-            android:name=".add_vehicle"
-            android:exported="false" />
-        <activity
-            android:name=".activities.MainActivity"
+            android:name=".activities.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,12 +25,20 @@
         <activity android:name=".activities.AddDestinationActivity" />
         <activity android:name=".activities.FetchDestinationActivity" />
         <activity android:name=".activities.DestinationDetailsActivity" />
-        <activity android:name=".activities.LoginActivity" />
-        <activity android:name=".activities.SignUpActivity" />
+        <activity android:name=".activities.DestinationDetailsUserActivity" />
+        <activity android:name=".activities.MainActivity" />
+        <activity android:name=".activities.SignupActivity" />
 
         <activity android:name=".activities.FetchLocation" />
         <activity android:name=".activities.AddLocationActivity" />
         <activity android:name=".activities.LocationDetailsActivity" />
+        <activity android:name=".activities.LocationDetailsUserActivity" />
+
+        <activity android:name=".activities.AddVehicle" />
+        <activity android:name=".activities.AdminDashboardActivity" />
+        <activity android:name=".activities.FetchVehicleActivity" />
+        <activity android:name=".activities.VehicleDetailsActivity" />
+        <activity android:name=".activities.VehicleDetailsUserActivity" />
     </application>
 
 </manifest>

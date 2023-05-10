@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="16dp">
+
+    <TextView
+        android:id="@+id/tv_destination_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Destination Name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAllCaps="true"/>
+
+    <ImageView
+        android:id="@+id/display_destination_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:maxHeight="0dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Image Preview" />
+
+    <TextView
+        android:id="@+id/tv_destination_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Destination Location"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_destination_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Destination Description"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:textColor="@color/black"/>
+
+</LinearLayout>

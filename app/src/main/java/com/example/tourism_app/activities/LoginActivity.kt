@@ -1,5 +1,6 @@
 package com.example.tourism_app.activities
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -50,6 +51,18 @@ class LoginActivity : AppCompatActivity() {
                     // Sign in success, update UI with the signed-in user's information
                     val user = auth.currentUser
                     Toast.makeText(this, "Authentication successful.", Toast.LENGTH_SHORT).show()
+
+                    // Get an instance of SharedPreferences
+                    val sharedPreferences = getSharedPreferences("my_prefs", Context.MODE_PRIVATE)
+
+                    // Get the editor to edit SharedPreferences
+                    val editor = sharedPreferences.edit()
+
+                    // Save the email to SharedPreferences
+                    editor.putString("email", email)
+
+                    // Commit the changes
+                    editor.apply()
 
                     if (emailEditText.text.toString() == "admin@app.com") {
                         startActivity(Intent(this, AdminDashboardActivity::class.java))

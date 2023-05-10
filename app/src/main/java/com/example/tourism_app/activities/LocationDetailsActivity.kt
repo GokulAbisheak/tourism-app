@@ -83,7 +83,7 @@ class LocationDetailsActivity : AppCompatActivity() {
     {
         val mDialog = AlertDialog.Builder(this)
         val inflater=layoutInflater
-        val mDialogView=inflater.inflate(R.layout.update_dialog,null)
+        val mDialogView=inflater.inflate(R.layout.update_dialog_l,null)
 
         mDialog.setView(mDialogView)
 

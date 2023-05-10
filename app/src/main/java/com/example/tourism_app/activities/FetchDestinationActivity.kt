@@ -1,5 +1,6 @@
 package com.example.tourism_app.activities
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -53,7 +54,20 @@ class FetchDestinationActivity : AppCompatActivity() {
 
                     mAdapter.setOnItemClickListener(object: DestinationAdapter.onItemClickListener{
                         override fun onItemClick(position: Int) {
-                            val intent = Intent(this@FetchDestinationActivity, DestinationDetailsActivity::class.java)
+
+                            // Get an instance of SharedPreferences
+                            val sharedPreferences = getSharedPreferences("my_prefs", Context.MODE_PRIVATE)
+
+                            // Retrieve the email from SharedPreferences
+                            val email = sharedPreferences.getString("email", "")
+                            val intent: Intent
+
+                            if(email.toString() == "admin@app.com"){
+                                intent = Intent(this@FetchDestinationActivity, DestinationDetailsActivity::class.java)
+                            } else {
+                                intent = Intent(this@FetchDestinationActivity, DestinationDetailsUserActivity::class.java)
+                            }
+
 
                             intent.putExtra("destinationId", destinationList[position].destinationId)
                             intent.putExtra("destinationName", destinationList[position].destinationName)

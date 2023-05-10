@@ -28,5 +28,11 @@ class AdminDashboardActivity : AppCompatActivity() {
             val intent = Intent(this, AddVehicle::class.java)
             startActivity(intent)
         }
+
+        accommodationManagementButton.setOnClickListener {
+            val intent = Intent(this, AddLocationActivity::class.java)
+            startActivity(intent)
+        }
+
         }
     }

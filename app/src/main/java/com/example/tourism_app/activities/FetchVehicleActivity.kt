@@ -61,6 +61,7 @@ class FetchVehicleActivity : AppCompatActivity() {
                             intent.putExtra("vehAvail",vehList[position].vehAvail)
                             intent.putExtra("vehDesc",vehList[position].vehDesc)
                             intent.putExtra("vehFare",vehList[position].vehFare)
+                            intent.putExtra("vehImg", vehList[position].vehImage)
 
                             startActivity(intent)
                         }

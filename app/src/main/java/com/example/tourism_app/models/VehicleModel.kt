@@ -5,5 +5,6 @@ data class VehicleModel (
     var vehTy: String?=null,
     var vehFare: String?=null,
     var vehDesc: String?=null,
-    var vehAvail: String?=null
+    var vehAvail: String?=null,
+    var vehImage :String?=null
     )

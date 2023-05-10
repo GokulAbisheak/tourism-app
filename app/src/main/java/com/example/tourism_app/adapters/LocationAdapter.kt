@@ -1,12 +1,12 @@
-package com.example.touristregister.adapters
+package com.example.tourism_app.adapters
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.touristregister.R
-import com.example.touristregister.models.CustomerModel
+import com.example.tourism_app.R
+import com.example.tourism_app.models.CustomerModel
 
 class LocationAdapter (private val locationList:ArrayList<CustomerModel>):
     RecyclerView.Adapter<LocationAdapter.ViewHolder>(){

@@ -1,11 +1,11 @@
-package com.example.touristregister.activities
+package com.example.tourism_app.activities
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.touristregister.R
+import com.example.tourism_app.R
 
 /**
  * A simple [Fragment] subclass.

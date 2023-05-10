@@ -1,4 +1,4 @@
-package com.example.touristregister.activities
+package com.example.tourism_app.activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,9 +7,9 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.touristregister.R
-import com.example.touristregister.adapters.LocationAdapter
-import com.example.touristregister.models.CustomerModel
+import com.example.tourism_app.R
+import com.example.tourism_app.adapters.LocationAdapter
+import com.example.tourism_app.models.CustomerModel
 import com.google.firebase.database.*
 
 

@@ -1,4 +1,4 @@
-package com.example.touristregister.activities
+package com.example.tourism_app.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -8,8 +8,8 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
-import com.example.touristregister.R
-import com.example.touristregister.models.CustomerModel
+import com.example.tourism_app.R
+import com.example.tourism_app.models.CustomerModel
 import com.google.firebase.database.FirebaseDatabase
 
 class LocationDetailsActivity : AppCompatActivity() {

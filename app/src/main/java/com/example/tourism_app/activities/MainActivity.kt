@@ -1,11 +1,11 @@
-package com.example.touristregister.activities
+package com.example.tourism_app.activities
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.touristregister.R
+import com.example.tourism_app.R
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 

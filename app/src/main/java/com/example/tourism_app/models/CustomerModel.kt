@@ -1,4 +1,4 @@
-package com.example.touristregister.models
+package com.example.tourism_app.models
 
 data class CustomerModel (
     var CusId:String? = null,
